@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&apos;in doDecrypt&apos;); 	const txt = document.getElementById(&apos;enc_content&apos;).innerHTML; 	let plantext; 	try { 		const bytes = CryptoJS.AES.decrypt(txt, pwd);">
+<meta name="description" content="为什么想写日记 &amp;amp;&amp;amp; 吹一波汤浅政明记日记的发心, 源于最近看的一部动漫, 汤浅政明的《海马》(kaiba), 看得我真的只想在汤浅面前长跪不起, 以前我老是把汤浅政明归入伊藤润二这类先锋艺术家, 老是觉得他喜欢耍滑头搞猎奇, 《春宵苦短》《四叠半》什么的我都认为沾了原作者森见登美彦的光,  但事实就是, 森见很牛, 汤浅政明也很牛, 这部片子的广角镜头的走位感, 情节的松紧度,">
 <meta name="keywords" content="写日记的原因,日记写什么">
 <meta property="og:type" content="article">
 <meta property="og:title" content="为什么Linkeer365开始写日记 &amp;&amp; (就目前来看)日记主要写什么">
 <meta property="og:url" content="http://yoursite.com/Linkeer365Diary/2019/10/07/为什么Linkeer365开始写日记/index.html">
 <meta property="og:site_name" content="伪物的跑马场">
-<meta property="og:description" content="function doDecrypt (pwd, onError) { 	console.log(&apos;in doDecrypt&apos;); 	const txt = document.getElementById(&apos;enc_content&apos;).innerHTML; 	let plantext; 	try { 		const bytes = CryptoJS.AES.decrypt(txt, pwd);">
+<meta property="og:description" content="为什么想写日记 &amp;amp;&amp;amp; 吹一波汤浅政明记日记的发心, 源于最近看的一部动漫, 汤浅政明的《海马》(kaiba), 看得我真的只想在汤浅面前长跪不起, 以前我老是把汤浅政明归入伊藤润二这类先锋艺术家, 老是觉得他喜欢耍滑头搞猎奇, 《春宵苦短》《四叠半》什么的我都认为沾了原作者森见登美彦的光,  但事实就是, 森见很牛, 汤浅政明也很牛, 这部片子的广角镜头的走位感, 情节的松紧度,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-04-06T09:03:43.776Z">
+<meta property="og:updated_time" content="2020-04-08T01:13:01.473Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="为什么Linkeer365开始写日记 &amp;&amp; (就目前来看)日记主要写什么">
-<meta name="twitter:description" content="function doDecrypt (pwd, onError) { 	console.log(&apos;in doDecrypt&apos;); 	const txt = document.getElementById(&apos;enc_content&apos;).innerHTML; 	let plantext; 	try { 		const bytes = CryptoJS.AES.decrypt(txt, pwd);">
+<meta name="twitter:description" content="为什么想写日记 &amp;amp;&amp;amp; 吹一波汤浅政明记日记的发心, 源于最近看的一部动漫, 汤浅政明的《海马》(kaiba), 看得我真的只想在汤浅面前长跪不起, 以前我老是把汤浅政明归入伊藤润二这类先锋艺术家, 老是觉得他喜欢耍滑头搞猎奇, 《春宵苦短》《四叠半》什么的我都认为沾了原作者森见登美彦的光,  但事实就是, 森见很牛, 汤浅政明也很牛, 这部片子的广角镜头的走位感, 情节的松紧度,">
 
 
 
@@ -268,8 +268,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-04-06T17:03:43+08:00">
-                2020-04-06 17:03:43
+              <time title="更新于" itemprop="dateModified" datetime="2020-04-08T09:13:01+08:00">
+                2020-04-08 09:13:01
               </time>
             
           </span>
@@ -333,46 +333,13 @@
       
 
       
-        <script src="/Linkeer365Diary/js/crypto-js.js"></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">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</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div>
+        <h2 id="为什么想写日记-amp-amp-吹一波汤浅政明"><a href="#为什么想写日记-amp-amp-吹一波汤浅政明" class="headerlink" title="为什么想写日记 &amp;&amp; 吹一波汤浅政明"></a>为什么想写日记 &amp;&amp; 吹一波汤浅政明</h2><p>记日记的发心, 源于最近看的一部动漫, 汤浅政明的《海马》(kaiba), 看得我真的只想在汤浅面前长跪不起, 以前我老是把汤浅政明归入伊藤润二这类先锋艺术家, 老是觉得他喜欢耍滑头搞猎奇, 《春宵苦短》《四叠半》什么的我都认为沾了原作者森见登美彦的光, </p>
+<p>但事实就是, 森见很牛, 汤浅政明也很牛, 这部片子的广角镜头的走位感, 情节的松紧度, 甚至包括对爱情的刻画的含蓄感, 都恰到好处, 就像一个年轻的武术高手, 势大力沉却不失灵动, 甚至后期有点快得飞起的情节, 我都觉得像一直喜欢的苦味冰淇淋, 冰淇淋一定要有咸苦的觉悟, 才能做到脱俗, 才能发掘出新奇的口感, 或者至少有新口感的潜能.</p>
+<h2 id="kaiba跟写日记有什么关系"><a href="#kaiba跟写日记有什么关系" class="headerlink" title="kaiba跟写日记有什么关系"></a>kaiba跟写日记有什么关系</h2><p>warp是记忆之王, 他尚且会因为各种各样的风波而失去记忆(到最后为了退治吃记忆的植物kaiba也再次丢掉了所有记忆), 我们显然不可能有这个能力和权限,所以我们的记忆就更应该好好的用文字和电子资料记录下来, 这样以后哪天我变得很邪恶很下作很龌龊的时候, 请大家拿着我的日记告诉我, 你曾经是一个这样的人, 不要丢掉曾经的你.如果我不能改变的话, 也请大家知道我曾经是另一幅样子, 只是人在多变的时代和无常的际遇两者面前, 气节和派头终究都显得太过可笑了.</p>
+<h2 id="日记主要包括哪些内容-侧重点在哪里"><a href="#日记主要包括哪些内容-侧重点在哪里" class="headerlink" title="日记主要包括哪些内容? 侧重点在哪里 ?"></a>日记主要包括哪些内容? 侧重点在哪里 ?</h2><p>虽然日记一定每篇都会加密, 这点不可商量的, 但是可以透露的是, 我的日记主要包括我自己一天的情感变化和生理变化(情感变化就是开心或者悲伤, 生理变化就是一些或粗或细的非固定参数), </p>
+<p>而侧重点主要在今天身边或体内发生的奇怪或难忘的事件(比如两年前高考完的那个暑假, 我独立推想出了”物自体”的客观存在, 这一点在最近读康德的时候才突然strike on me, 就感觉<code>啊我的智慧真是跨越时空</code>什么的~, 这个就属于体内发生的; 或者今天凌晨时分我在出租车上莫名感受到司机的绝望感与无力感, 于是苦劝,希望他不要想到自杀,这个动作现在很普遍了, 甚至还为此绕了远路, 这样的事情就属于体外发生的), </p>
+<p>我觉得这样多多少少能够映照历史, 虽然这就像<code>&quot;难道月亮会因为人不写诗而黯淡半分吗&quot;</code>(俄罗斯谚语, 好像是《卡尔马佐夫兄弟》里面的, 有点忘了)一样的可笑与荒谬, 但无能如我, 这样大概就能欣慰一点, 这大概也和四季映姬”无罪者唯华鸟风月耳”的见解有点突兀地不谋而合了.</p>
+
       
     </div>
     
@@ -468,8 +435,17 @@ doDecrypt(passwd, onError);
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -520,6 +496,22 @@ doDecrypt(passwd, onError);
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么想写日记-amp-amp-吹一波汤浅政明"><span class="nav-text">为什么想写日记 &amp;&amp; 吹一波汤浅政明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#kaiba跟写日记有什么关系"><span class="nav-text">kaiba跟写日记有什么关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日记主要包括哪些内容-侧重点在哪里"><span class="nav-text">日记主要包括哪些内容? 侧重点在哪里 ?</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
